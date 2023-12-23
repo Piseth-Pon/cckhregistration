@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>CHAMPION CODERS</h2>
+  </header>
+
+  <div class="form-wrapper">
+    <h4>Register new student:</h4>
+
+    <form action="" id="addStudentForm">
+      <div class="group">
+        <label>Fullname</label>
+        <input type="text" id="fullname" placeholder="Enter student fullname">
+      </div>
+      <div class="group">
+        <label>Age</label>
+        <input type="text" id="age" placeholder="Enter student age">
+      </div>
+      <div class="group">
+        <label>Course</label>
+        <select id="course">
+          <option value="">Select a course</option>
+          <option value="scratch">Scratch</option>
+          <option value="python">Python</option>
+          <option value="html/css">HTML/CSS</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+      </div>
+      <div class="group">
+        <label>Shift</label>
+        <select id="shift">
+          <option value="">Select a shift</option>
+          <option value="SAT 08:30-10:00AM">SAT 08:30-10:00AM</option>
+          <option value="SAT 10:00-11:30AM">SAT 10:00-11:30AM</option>
+          <option value="SAT 02:00-03:30PM">SAT 02:00-03:30PM</option>
+          <option value="SAT 03:30-05:00PM">SAT 03:30-05:00PM</option>
+          <option value="SUN 08:30-10:00AM">SUN 08:30-10:00AM</option>
+          <option value="SUN 10:00-11:30AM">SUN 10:00-11:30AM</option>
+          <option value="SUN 02:00-03:30PM">SUN 02:00-03:30PM</option>
+          <option value="SUN 03:30-05:00PM">SUN 03:30-05:00PM</option>
+        </select>
+      </div>
+      <div class="group">
+        <label>Term(s)</label>
+        <input type="number" id="terms" min="1" max="6" value="1">
+      </div>
+
+      <button class="btn" type="submit">REGISTER</button>
+    </form>
+  </div>
+
+
+  <div class="students-wrapper">
+    <h4>Students Database</h4>
+    <table id="studentTable">
+      <tr>
+        <th>N<sup>0</sup></th>
+        <th>Fullname</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Shift</th>
+        <th>Terms</th>
+      </tr>
+      <!-- <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr> -->
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
